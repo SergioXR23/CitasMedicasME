@@ -1,0 +1,479 @@
+[
+  {
+    "ContainingType": "CitasController",
+    "Method": "ActualizarCita",
+    "RelativePath": "citas/actualizar/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "editarCitaDto",
+        "Type": "CitasMedicasME.Models.DTOs.EditarCitaDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CitasController",
+    "Method": "ObtenerCitaPorId",
+    "RelativePath": "citas/buscar/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CitasController",
+    "Method": "CrearCita",
+    "RelativePath": "citas/crear",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "crearCitaDto",
+        "Type": "CitasMedicasME.Models.DTOs.CrearCitaDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CitasController",
+    "Method": "EliminarCita",
+    "RelativePath": "citas/eliminar/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CitasController",
+    "Method": "ListarTodasLasCitas",
+    "RelativePath": "citas/listar",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CitasMedicasME.Controllers.DiagnosticoController",
+    "Method": "ActualizarDiagnostico",
+    "RelativePath": "diagnosticos/actualizar/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "editarDiagnosticoDto",
+        "Type": "CitasMedicasME.Models.DTOs.CitasMedicasME.Models.DTOs.EditarDiagnosticoDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CitasMedicasME.Controllers.DiagnosticoController",
+    "Method": "EliminarDiagnostico",
+    "RelativePath": "diagnosticos/borrar/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CitasMedicasME.Controllers.DiagnosticoController",
+    "Method": "ObtenerDiagnosticoPorId",
+    "RelativePath": "diagnosticos/buscar/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CitasMedicasME.Models.DTOs.DiagnosticoDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CitasMedicasME.Controllers.DiagnosticoController",
+    "Method": "CrearDiagnostico",
+    "RelativePath": "diagnosticos/crear/{citaId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "citaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "crearDiagnosticoDto",
+        "Type": "CitasMedicasME.Models.DTOs.CitasMedicasME.Models.DTOs.CrearDiagnosticoDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CitasMedicasME.Controllers.DiagnosticoController",
+    "Method": "ListarDiagnosticos",
+    "RelativePath": "diagnosticos/listar",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[CitasMedicasME.Models.DTOs.DiagnosticoDto, CitasMedicasME, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CitasMedicasME.Controllers.MedicosController",
+    "Method": "ActualizarMedico",
+    "RelativePath": "medicos/actualizar/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "medicoDto",
+        "Type": "CitasMedicasME.Models.DTOs.EditarMedicoDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CitasMedicasME.Controllers.MedicosController",
+    "Method": "BuscarMedicoPorId",
+    "RelativePath": "medicos/buscarPorId/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CitasMedicasME.Controllers.MedicosController",
+    "Method": "BuscarMedicoPorNumColegiado",
+    "RelativePath": "medicos/buscarPorNum/{numColegiado}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "numColegiado",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CitasMedicasME.Controllers.MedicosController",
+    "Method": "CrearMedico",
+    "RelativePath": "medicos/crear",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "crearMedicoDto",
+        "Type": "CitasMedicasME.Models.DTOs.CrearMedicoDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CitasMedicasME.Controllers.MedicosController",
+    "Method": "EliminarMedico",
+    "RelativePath": "medicos/eliminar/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CitasMedicasME.Controllers.MedicosController",
+    "Method": "ListarMedicos",
+    "RelativePath": "medicos/listar",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CitasMedicasME.Controllers.PacientesController",
+    "Method": "ActualizarPaciente",
+    "RelativePath": "pacientes/actualizar/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "editarPacienteDto",
+        "Type": "CitasMedicasME.Models.DTOs.EditarPacienteDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CitasMedicasME.Controllers.PacientesController",
+    "Method": "ObtenerPaciente",
+    "RelativePath": "pacientes/buscar/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CitasMedicasME.Controllers.PacientesController",
+    "Method": "CrearPaciente",
+    "RelativePath": "pacientes/crear",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "crearPacienteDto",
+        "Type": "CitasMedicasME.Models.DTOs.CrearPacienteDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CitasMedicasME.Controllers.PacientesController",
+    "Method": "EliminarPaciente",
+    "RelativePath": "pacientes/eliminar/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CitasMedicasME.Controllers.PacientesController",
+    "Method": "ListarPacientes",
+    "RelativePath": "pacientes/listar",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CitasMedicasME.Controllers.UsuariosController",
+    "Method": "ActualizarUsuario",
+    "RelativePath": "usuarios/actualizar",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuarioDto",
+        "Type": "CitasMedicasME.Models.DTOs.UsuarioDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CitasMedicasME.Controllers.UsuariosController",
+    "Method": "Autenticar",
+    "RelativePath": "usuarios/autenticar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuarioDto",
+        "Type": "CitasMedicasME.Models.DTOs.loginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CitasMedicasME.Controllers.UsuariosController",
+    "Method": "GetUsuario",
+    "RelativePath": "usuarios/buscar/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CitasMedicasME.Models.DTOs.UsuarioDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CitasMedicasME.Controllers.UsuariosController",
+    "Method": "PostUsuario",
+    "RelativePath": "usuarios/crear",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuarioDto",
+        "Type": "CitasMedicasME.Models.DTOs.CrearUsuarioDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CitasMedicasME.Models.DTOs.UsuarioDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CitasMedicasME.Controllers.UsuariosController",
+    "Method": "DeleteUsuario",
+    "RelativePath": "usuarios/eliminar/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CitasMedicasME.Controllers.UsuariosController",
+    "Method": "GetUsuarios",
+    "RelativePath": "usuarios/listar",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[CitasMedicasME.Models.DTOs.UsuarioDto, CitasMedicasME, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
